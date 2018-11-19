@@ -141,6 +141,11 @@ docker:
   2.安装RabbitMQ
     a.docker pull rabbitmq:3.7.7-management(安装)
     b.docker run -d --hostname myrabbit --name rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3.7.7-management（运行）
+	
+	
+git命令指南：
+   	http://www.cnblogs.com/chenwolong/p/GIT.html
+	
 
     
   
