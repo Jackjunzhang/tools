@@ -15,11 +15,13 @@ rabbimq-server:
   
   
 consul:  
+
   启动命令：consul agent -dev
   
   http://localhost:8500 
   
 jenkins:
+
   默认用户名：admin
   默认密码在  C:\Users\HT\.jenkins\secrets\initialAdminPassword       （我的电脑用户名叫HT，看看您的是什么）
   cmd 进入jenkins.war 的所在文件夹，输入命令“java -jar jenkins.war”启动Jenkins
@@ -36,6 +38,7 @@ jenkins:
   
   
 tomcat: 
+
       /home/apache-tomcat-8.5.34/bin/startup.sh 启动命令
       /home/apache-tomcat-8.5.34/bin/shutdown.sh 停止命令 
        tail -f catalina.out   进入tomcat/logs/文件夹下 ,查看日志
@@ -91,7 +94,7 @@ service mysqld restart
 
 
 nginx:
-      安装：
+      
           1.检查并安装Nginx基础依赖包pcre-devel   openssl-devel
             yum install -y openssl-devel pcre-devel
           2.开始安装Nginx 操作命令如下：
@@ -127,6 +130,7 @@ nginx:
 			  
 
 防火墙:
+
      systemctl status firewalld  查看firewalld状态
      systemctl start firewalld   开启防火墙
      firewall-cmd --permanent --zone=public --add-port=3306/tcp 永久开启端口
@@ -137,6 +141,7 @@ nginx:
 	 
 
 docker:
+
   1.自身安装
   2.安装RabbitMQ
     a.docker pull rabbitmq:3.7.7-management(安装)
